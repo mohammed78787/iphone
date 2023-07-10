@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container {
+    background-color: black;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+
+}
+.logo {
+    width: 40px;
+}
+header ul li {
+    display: inline-block;
+}
+header ul li a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+@media (max-width: 650px) {
+    header {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    header ul li a {
+        font-size: 16px;
+        margin: 0 6px;
+    }
+
+}
+@media (max-width: 400px) {
+header ul li a {
+    font-size: 13px;
+    margin: 0 4px;
+}
+}
+/* content */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+.content .text {
+    color: #fff;
+    width: 40%;
+}
+.content .img {
+    width: 180px;
+}
+.content .img img {
+    width: 100%;
+}
+.content h2 {
+    text-transform: uppercase;
+    font-size: 40px;
+}
+.content p {
+    margin:30px 0 ;
+    font-size: 18px;
+}
+.content a {
+    background-color:#fff;
+    color: #000;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 20px;
+    text-transform: capitalize;
+}
+@media (max-width: 650px) {
+    .content {
+        
+        width: 95%;
+    }
+    .content h2 {
+        font-size: 25px;
+    }
+    .content p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    .content .img {
+        width: 150px;
+    }
+}
+@media (max-width: 400px) {
+    .content h2 {
+        font-size: 20px;
+    }
+    .content p {
+        font-size: 13px;
+    }
+    .content .img {
+        width: 130px;
+    }
+}
+/* imgs */ 
+.imgs {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.imgs img {
+    width: 60px;
+    transition: .5s;
+    cursor: pointer;
+
+  
+}
+.imgs img:hover {
+    transform: scale(1.2);
+
+}
+@media (max-width: 650px) {
+    .imgs img {
+        width: 40px;
+    }
+}
+@media (max-width: 400px) {
+    .imgs img {
+        width: 24px;
+    }
+}
